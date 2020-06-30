@@ -2,6 +2,7 @@ import React from "react";
 import LikeCounter from "./components/LikeCounter";
 import Title from "./components/Title";
 import LikeButton from "./components/LikeButton";
+import AwesomeAnimals from "./components/AwesomeAnimals";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <p>Ya like?</p>
       <LikeCounter />
       <LikeButton />
+      <AwesomeAnimals />
     </main>
   );
 }
