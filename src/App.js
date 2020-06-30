@@ -1,11 +1,12 @@
 import React from "react";
-import "./App.css";
 import LikeCounter from "./components/LikeCounter";
+import Title from "./components/Title";
 
 function App() {
   return (
     <main>
-      <Title content="Some Simple Title" />
+      <Title content="My first button in React!" />
+      <p>Ya like?</p>
       <LikeCounter />
     </main>
   );
