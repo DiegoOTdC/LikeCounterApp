@@ -3,6 +3,7 @@ import LikeCounter from "./components/LikeCounter";
 import Title from "./components/Title";
 import LikeButton from "./components/LikeButton";
 import AwesomeAnimals from "./components/AwesomeAnimals";
+import ArticleList from "./components/ArticleList";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <LikeCounter />
       <LikeButton />
       <AwesomeAnimals />
+      <ArticleList />
     </main>
   );
 }

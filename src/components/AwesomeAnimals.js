@@ -13,7 +13,7 @@ export default function AwesomeAnimals() {
     <ul>
       {animals.map((animal, index) => {
         return (
-          <li>
+          <li key={index}>
             Awesomeness level {index + 1}: {animal}
           </li>
         );
