@@ -1,4 +1,4 @@
-import React, { useState } from "react"; // <- note the added import of useState
+import React, { useState, useEffect } from "react"; // <- note the added import of useState
 
 export default function LikeCounter() {
   const initial_numLikes = 0;
@@ -12,6 +12,12 @@ export default function LikeCounter() {
   const reset = () => {
     set_numLikes(initial_numLikes);
   };
+
+  console.log("A render!");
+
+  useEffect(() => {
+    console.log("The useEffect action!");
+  }, [numLikes]);
 
   return (
     <div>

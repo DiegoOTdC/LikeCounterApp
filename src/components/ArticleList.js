@@ -23,26 +23,17 @@ export default function ArticleList() {
     },
   ]);
 
-  function newState() {
-    set_articles([
-      { id: 1, title: "", body: "" },
-      { id: 2, title: "", body: "" },
-      { id: 3, title: "", body: "" },
-    ]);
-  }
   return (
     <div>
       <p>Here's a lovely list of articles, for your reading pleasure:</p>
-      <button onClick={newState}>Clear notifications</button>
-      {articles.map((article) => {
-        return (
-          <ArticleCard
-            key={article.id}
-            title={article.title}
-            content={article.body}
-          />
-        );
-      })}
+      <button onClick={() => set_articles([])}>Clear notifications</button>
+      {articles.map((article) => (
+        <ArticleCard
+          key={article.id}
+          title={article.title}
+          content={article.body}
+        />
+      ))}
     </div>
   );
 }
