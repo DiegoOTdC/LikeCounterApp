@@ -1,6 +1,7 @@
 // src/components/ArticleList.js
 import React, { useState } from "react";
 import ArticleCard from "./ArticleCard";
+import Timeout from "await-timeout";
 
 export default function ArticleList() {
   const [articles, set_articles] = useState([
